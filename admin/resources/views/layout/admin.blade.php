@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin2 </title>
+    <title>E com | {{$title}}</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('vendors/feather/feather.css')}}">
     <link rel="stylesheet"
@@ -134,8 +134,11 @@
         </nav>
         <!-- partial -->
         <div class="main-panel">
-          <div class="content-wrapper">
-          </div>
+          <section class="content">
+            <div class="content-wrapper">
+              @yield('content')
+            </div>
+          </section>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
